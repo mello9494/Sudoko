@@ -4,7 +4,6 @@ import Specifications
 
 pygame.init()
 
-
 class Object:
     width = 0
     height = 0
@@ -83,16 +82,16 @@ class Button(Object):
 
     @staticmethod
     def check_and_solve():
-        check_button = Object(100, 50, 123, 550, Specifications.light_gray, Specifications.button_font, 'Check')
-        solve_button = Object(100, 50, 285, 550, Specifications.light_gray, Specifications.button_font, 'Solve')
+        check_button = Object(100, 50, (Specifications.width // 3) - 50, 550, Specifications.light_gray, Specifications.button_font, 'Check')
+        solve_button = Object(100, 50, (2 * Specifications.width // 3) - 50, 550, Specifications.light_gray, Specifications.button_font, 'Solve')
 
         return check_button, solve_button
 
     @staticmethod
     def start_buttons():
-        easy = Object(80, 50, 50, 550, Specifications.light_gray, Specifications.button_font, 'Easy')
-        medium = Object(120, 50, 180, 550, Specifications.light_gray, Specifications.button_font, 'Medium')
-        hard = Object(80, 50, 350, 550, Specifications.light_gray, Specifications.button_font, 'Hard')
+        medium = Object(120, 50, (Specifications.width // 2) - 60, 550, Specifications.light_gray, Specifications.button_font, 'Medium')
+        easy = Object(80, 50, medium.pos_x - 100, 550, Specifications.light_gray, Specifications.button_font, 'Easy')
+        hard = Object(80, 50, medium.pos_x + 140, 550, Specifications.light_gray, Specifications.button_font, 'Hard')
         return easy, medium, hard
 
     @staticmethod

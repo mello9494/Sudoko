@@ -20,9 +20,9 @@ class Utilities:
     @staticmethod
     def main_menu_screen(easy, medium, hard):
         # background
-        Specifications.display_surface.fill((60, 63, 65))
+        Specifications.display_surface.fill((54, 57, 69))
         # title
-        title = Specifications.title_font.render("Sudoko", True, (0, 0, 0), None)
+        title = Specifications.title_font.render("Sudoko", True, (255, 255, 255), None)
         title_rect = title.get_rect()
         title_rect.centerx = Specifications.width // 2
         title_rect.centery = easy.pos_y // 2
@@ -34,7 +34,8 @@ class Utilities:
 
     @staticmethod
     def game_screen(check_button, solve_button):
-        # Initialize_Board.draw_all(squares)
+        # fill the screen with a color
+        Specifications.display_surface.fill((54, 57, 69))
         # check and solve buttons
         check_button.draw_all()
         solve_button.draw_all()

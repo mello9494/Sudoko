@@ -42,8 +42,6 @@ def main():
                 # logic for each screen
                 if main_menu_screen:
                     if easy.rect.collidepoint(position) or medium.rect.collidepoint(position) or hard.rect.collidepoint(position):
-                        # fill the screen with a color
-                        Specifications.display_surface.fill((255, 255, 255))
                         # make boards
                         Specifications.board, Specifications.copy_board = utilities.make_boards(easy, medium, hard, position)
                         Specifications.solve_board = [[j for j in i] for i in Specifications.board]
