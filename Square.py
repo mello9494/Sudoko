@@ -4,6 +4,7 @@ import Specifications
 
 pygame.init()
 
+
 class Object:
     width = 0
     height = 0

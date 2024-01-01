@@ -26,6 +26,13 @@ class Utilities:
         title_rect = title.get_rect()
         title_rect.centerx = Specifications.width // 2
         title_rect.centery = easy.pos_y // 2
+
+        title_background = Specifications.title_font.render("Sudoko", True, (10, 10, 10), None)
+        title_background_rect = title.get_rect()
+        title_background_rect.centerx = Specifications.width // 2 + 5
+        title_background_rect.centery = easy.pos_y // 2 + 5
+
+        Specifications.display_surface.blit(title_background, title_background_rect)
         Specifications.display_surface.blit(title, title_rect)
         # buttons
         easy.draw_all()
