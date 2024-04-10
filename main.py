@@ -121,5 +121,6 @@ def main():
         pygame.display.flip()
         Specifications.clock.tick(tick)
 
+
 if __name__ == '__main__':
     main()

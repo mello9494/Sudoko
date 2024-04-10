@@ -12,7 +12,7 @@ display_surface.fill((60, 63, 65))
 pygame.display.set_caption('Sudoko')
 clock = pygame.time.Clock()
 default_font = pygame.font.Font('freesansbold.ttf', 40)
-title_font = pygame.font.Font("/Users/tannersmith/opt/anaconda3/lib/python3.8/site-packages/pygame/Preahvihear-Regular.ttf", 80)
+title_font = pygame.font.Font("/System/Library/Fonts/Supplemental/AmericanTypewriter.ttc", 80)
 button_font = font = pygame.font.Font('freesansbold.ttf', 25)
 font_color = (92, 130, 160)
 

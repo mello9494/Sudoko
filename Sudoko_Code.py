@@ -21,16 +21,12 @@ def solve(board):
     else:
         return True  # if temp is None then board is complete
 
-    for i in range(1, len(board) + 1):  # iterator to go through each possible input for empty spot
+    for i in range(1, 10):  # iterator to go through each possible input for empty spot
         if checkValid(row, col, i, board):  # checks if i is a valid input for space
             board[row][col] = i  # sets the empty space to i
-            #print(row, col, i)
             if solve(board):  # recursively calls itself to check each empty spot and backtrack if necessary
                 return True
-            #print('wrong', row, col, i)
             board[row][col] = 0  # resets spot to empty if solve() returns false
-        #else:
-        #print('invalid', row, col, i)
 
     return False  # if checkValid() cannot find a valid number to fill spot, line 25 will execute
 
