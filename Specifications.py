@@ -9,7 +9,7 @@ width = 490
 height = 755
 display_surface = pygame.display.set_mode((width, height))
 display_surface.fill((60, 63, 65))
-pygame.display.set_caption('Sudoko')
+pygame.display.set_caption('Sudoku')
 clock = pygame.time.Clock()
 default_font = pygame.font.Font('freesansbold.ttf', 40)
 title_font = pygame.font.Font("/System/Library/Fonts/Supplemental/AmericanTypewriter.ttc", 80)

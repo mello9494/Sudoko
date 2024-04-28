@@ -1,4 +1,4 @@
-# sudoko solver using backtracking
+# sudoku solver using backtracking
 
 import pygame.time
 

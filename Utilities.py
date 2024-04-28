@@ -22,12 +22,12 @@ class Utilities:
         # background
         Specifications.display_surface.fill((54, 57, 69))
         # title
-        title = Specifications.title_font.render("Sudoko", True, (255, 255, 255), None)
+        title = Specifications.title_font.render("Sudoku", True, (255, 255, 255), None)
         title_rect = title.get_rect()
         title_rect.centerx = Specifications.width // 2
         title_rect.centery = easy.pos_y // 2
 
-        title_background = Specifications.title_font.render("Sudoko", True, (10, 10, 10), None)
+        title_background = Specifications.title_font.render("Sudoku", True, (10, 10, 10), None)
         title_background_rect = title.get_rect()
         title_background_rect.centerx = Specifications.width // 2 + 5
         title_background_rect.centery = easy.pos_y // 2 + 5

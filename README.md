@@ -1,5 +1,5 @@
-# Sudoko
-This Sudoko game is a project written in Python. This project implements Python GUI, Object-Oriented Programming principles, and backtracking.
+# Sudoku
+This Sudoku game is a project written in Python. This project implements Python GUI, Object-Oriented Programming principles, and backtracking.
 
 ## Python
 As this project is written in Python, I have chosen Pygame to enable user interaction.
